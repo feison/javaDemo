@@ -2,7 +2,6 @@ package com.example.demo.config.dao;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,9 +23,11 @@ public class SessionFactoryConfiguration {
     @Value("${entity_package}")
     private String entityPackage;
 
-    @Autowired
-    @Qualifier("dataSource")
-    private DataSource dataSource;
+    private final DataSource dataSource;
+
+    public SessionFactoryConfiguration(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Bean(name="sqlSessionFactory")
     public SqlSessionFactoryBean createSqlSessionFactoryBean() throws IOException {
