@@ -20,9 +20,11 @@ public class AreaController {
     }
 
     @GetMapping(value = "/list")
-    private Map<String, Object> listarea(){
+    private Map<String, Object> listArea(){
         Map<String, Object> modelMap = new HashMap<>();
         List<Area> list = areaService.queryArea();
+        modelMap.put("code", 1);
+        modelMap.put("msg", "ok");
         modelMap.put("areaList", list);
         return modelMap;
     }
