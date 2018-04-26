@@ -15,7 +15,7 @@ public class SessionFactoryConfiguration {
 
     @Value("${mybatis_config_file}")
     private String mybatisConfigFilePath;
-    
+
     @Value("${mapper_path}")
     private String mapperPath;
 
@@ -28,7 +28,7 @@ public class SessionFactoryConfiguration {
         this.dataSource = dataSource;
     }
 
-    @Bean(name="sqlSessionFactory")
+    @Bean(name = "sqlSessionFactory")
     public SqlSessionFactoryBean createSqlSessionFactoryBean() throws IOException {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setConfigLocation(new ClassPathResource(mybatisConfigFilePath));
