@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.fei.demo.controller;
 
-import com.example.demo.entity.Area;
-import com.example.demo.service.AreaService;
+import com.fei.demo.entity.Area;
+import com.fei.demo.service.AreaService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;

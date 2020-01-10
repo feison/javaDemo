@@ -1,8 +1,8 @@
-package com.example.demo.service.impl;
+package com.fei.demo.service.impl;
 
-import com.example.demo.dao.AreaDao;
-import com.example.demo.entity.Area;
-import com.example.demo.service.AreaService;
+import com.fei.demo.dao.AreaDao;
+import com.fei.demo.entity.Area;
+import com.fei.demo.service.AreaService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

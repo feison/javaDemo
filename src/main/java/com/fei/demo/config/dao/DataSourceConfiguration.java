@@ -1,4 +1,4 @@
-package com.example.demo.config.dao;
+package com.fei.demo.config.dao;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.annotation.MapperScan;

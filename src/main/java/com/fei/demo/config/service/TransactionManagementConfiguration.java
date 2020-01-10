@@ -1,4 +1,4 @@
-package com.example.demo.config.service;
+package com.fei.demo.config.service;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;

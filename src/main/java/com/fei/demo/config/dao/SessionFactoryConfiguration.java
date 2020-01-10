@@ -1,4 +1,4 @@
-package com.example.demo.config.dao;
+package com.fei.demo.config.dao;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Value;

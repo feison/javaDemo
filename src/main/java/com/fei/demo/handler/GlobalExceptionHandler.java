@@ -1,4 +1,4 @@
-package com.example.demo.handler;
+package com.fei.demo.handler;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

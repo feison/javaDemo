@@ -1,6 +1,6 @@
-package com.example.demo.dao;
+package com.fei.demo.dao;
 
-import com.example.demo.entity.Area;
+import com.fei.demo.entity.Area;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

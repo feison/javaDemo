@@ -1,6 +1,6 @@
-package com.example.demo.dao;
+package com.fei.demo.dao;
 
-import com.example.demo.entity.Area;
+import com.fei.demo.entity.Area;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
